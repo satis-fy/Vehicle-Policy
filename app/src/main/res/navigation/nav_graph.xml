@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/vehiclePolicyFragment">
+    <fragment
+        android:id="@+id/addVehiclePolicyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.AddVehiclePolicyFragment"
+        android:label="fragment_add_vehicle_policy"
+        tools:layout="@layout/fragment_add_vehicle_policy" >
+        <argument
+            android:name="addVehiclePolicyCompanys"
+            app:nullable="true"
+            app:argType="com.example.vehicle_policy.data.VehiclePolicyCompanys" />
+        <argument
+            android:name="fromSearchVehiclePolicy"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_addVehiclePolicyFragment_to_vehiclePolicyFragment"
+            app:destination="@id/vehiclePolicyFragment"
+            app:popUpTo="@id/vehiclePolicyFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listVehiclePolicyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.ListVehiclePolicyFragment"
+        android:label="fragment_list_vehicle_policy"
+        tools:layout="@layout/fragment_list_vehicle_policy" >
+        <action
+            android:id="@+id/action_listVehiclePolicyFragment_to_addVehiclePolicyFragment"
+            app:destination="@id/addVehiclePolicyFragment" />
+        <action
+            android:id="@+id/action_listVehiclePolicyFragment_to_updateVehiclePolicyFragment"
+            app:destination="@id/updateVehiclePolicyFragment" />
+        <argument
+            android:name="singleCompanyNameLogo"
+            app:argType="com.example.vehicle_policy.data.VehiclePolicyCompanys"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_listVehiclePolicyFragment_to_showVehiclePolicyFragment"
+            app:destination="@id/showVehiclePolicyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateVehiclePolicyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.UpdateVehiclePolicyFragment"
+        android:label="fragment_update_vehicle_policy"
+        tools:layout="@layout/fragment_update_vehicle_policy" >
+        <argument
+            android:name="UpdateVehiclePolicy"
+            app:argType="com.example.vehicle_policy.data.VehiclePolicy"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/vehiclePolicyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.VehiclePolicyFragment"
+        android:label="fragment_vehicle_policy"
+        tools:layout="@layout/fragment_vehicle_policy" >
+        <action
+            android:id="@+id/action_vehiclePolicyFragment_to_listVehiclePolicyFragment"
+            app:destination="@id/listVehiclePolicyFragment" />
+        <action
+            android:id="@+id/action_vehiclePolicyFragment_to_searchVehiclePolicyCompanyFragment"
+            app:destination="@id/searchVehiclePolicyCompanyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchVehiclePolicyCompanyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.SearchVehiclePolicyCompanyFragment"
+        android:label="fragment_search_vehicle_policy_company"
+        tools:layout="@layout/fragment_search_vehicle_policy_company" >
+        <action
+            android:id="@+id/action_searchVehiclePolicyCompanyFragment_to_addVehiclePolicyFragment"
+            app:destination="@id/addVehiclePolicyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showVehiclePolicyFragment"
+        android:name="com.example.vehicle_policy.ui.fragment.ShowVehiclePolicyFragment"
+        android:label="fragment_show_vehicle_policy"
+        tools:layout="@layout/fragment_show_vehicle_policy" >
+        <argument
+            android:name="showVehiclePolicy"
+            app:argType="com.example.vehicle_policy.data.VehiclePolicy" />
+    </fragment>
+</navigation>

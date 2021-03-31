@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/Padding_Start_vps"
+        android:paddingTop="@dimen/Padding_Top_vps"
+        android:paddingEnd="@dimen/Padding_Start_vps"
+        android:paddingBottom="@dimen/Padding_Top_vps">
+
+        <ImageView
+            android:id="@+id/iv_companyLogo_vp_search"
+            android:layout_width="@dimen/heightWidth_companyIcon_vps"
+            android:layout_height="@dimen/heightWidth_companyIcon_vps"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="CompanyLogo"
+            android:src="@drawable/hcl1" />
+
+        <TextView
+            android:id="@+id/tv_companyName_vp_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/iv_companyLogo_vp_search"
+            android:ellipsize="end"
+            android:fontFamily="@font/calibri"
+            android:maxLines="1"
+            android:text="Lic Insurance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textView_color"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/textHint" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#212124</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="statusBarColor">#141414</color>
+    <color name="cardView_background">#161618</color>
+    <color name="textView_color">#FFFFFF</color>
+    <color name="imageView_color">#FFFFFF</color>
+    <color name="textHint">#C0C0C0</color>
+    <color name="show_text_view_title">#B3B4B4B4</color>
+    <color name="button_text_color">#FFFFFF</color>
+
+</resources>

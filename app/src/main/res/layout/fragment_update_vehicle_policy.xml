@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layout_padding"
+    android:paddingStart="@dimen/layout_padding"
+    android:paddingEnd="@dimen/layout_padding"
+    tools:context=".ui.fragment.UpdateVehiclePolicyFragment"
+    android:id="@+id/updateVehiclePolicyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <ImageButton
+            android:id="@+id/iv_back_vpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/back_button_padding"
+            android:src="@drawable/arrow_back"
+            android:tooltipText="Back" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_addvehiclepolicy_vpu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/calibri_bold"
+            android:paddingStart="@dimen/title_Padding"
+            android:paddingEnd="@dimen/title_Padding"
+            android:paddingBottom="12dp"
+            android:text="Update Vehicle Policy"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scroll_vpu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="@dimen/layout_padding"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_compantname_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Company Name"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_companyName_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:fontFamily="@font/calibri"
+                    android:inputType="none"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_policynumber_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Policy Number"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi"
+                    android:singleLine="true"/>
+
+
+                <EditText
+                    android:id="@+id/et_policyNumber_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g. 202009100002369"
+                    android:inputType="number"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclenumber_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Vehicle Number"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_vehicleNumber_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g. GJ09AB1234"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_vehiclename_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Vehicle Name"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_vehicleName_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g. Maruti Ciaz"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_purchasedate_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Purchase Date"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_purchaseDate_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g 04/05/2018"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_expirydate_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Expiry Date"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_expiryDate_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g 03/05/2020"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_policyamount_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Policy Amount"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_policyAmount_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g. 23069"
+                    android:inputType="number"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <TextView
+                    android:id="@+id/tv_policytype_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:fontFamily="@font/calibri"
+                    android:text="Policy Type"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <EditText
+                    android:id="@+id/et_policyType_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
+                    android:hint="e.g. Third-Party Insurance (optional)"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/textView_color"
+                    android:textSize="@dimen/textView_editText_size_vpi" />
+
+                <Button
+                    android:id="@+id/bt_updatePolicy_vpu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/textView_topMargin_vpi"
+                    android:layout_marginBottom="@dimen/textView_topMargin_vpi"
+                    android:enabled="false"
+                    android:text="Update Policy"
+                    android:textColor="@color/button_text_color"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
